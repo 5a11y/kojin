@@ -81,7 +81,7 @@
   grid-template-areas: "content1 content2 content3"
                        "content4 content5 content6"
                        "content7 content8 content9"
-                       "content10 content11 content12";
+                       "content10 content11 content12";                     
 }
 
 .content1 {
@@ -449,11 +449,17 @@
   font-weight: bold;
 }
 
-/* .footer {
+.copyright {
   height: 20px;
-  width: 50%;
-  background-color: slategrey;
+  width: 20%;
+  background-color: black;
   position: absolute;
   bottom: 0;
   right: 0;
-} */
+  z-index: -1;
+  position: fixed;
+  color: white;
+  font-size: small;
+  text-align: center;
+}
+
