@@ -1,5 +1,6 @@
 .html, body,header, .background {
   height: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -11,6 +12,7 @@
   background-size: 100%;
   z-index: -1;
   position: relative;
+  position: fixed;
 }
 
 .body {
@@ -26,6 +28,7 @@
   top: 0;
   display: flex;
   justify-content: space-between;
+  position: fixed;
 }
 
 .menu {
@@ -40,24 +43,417 @@
 
 .logo {
   /* background-color: white; */
-  width: 320px;
+  width: 800px;
+  padding-left: 60px;
   text-align: left;
   line-height: 100px;
   font-size: 70px;
   font-weight: bold;
-  font-family: 'Montserrat Subrayada', sans-serif;
-
+  font-family: 'Caveat', cursive;
 }
 
-.logo_box {
+/* .logo_box {
   height: 60px;
   background-color: blueviolet;
   padding: 10px 0; 
   font-size: 30px;
-} 
+}  */
 
 /* .none {
   background-color: white;
   width: 30px;
 } */
 
+.contents {
+  height: 295%;
+  width: 100vw;
+  box-sizing: border-box;
+  /* background-color: cornsilk; */
+  position: absolute;
+  top: 150px;
+  right: 0;
+  bottom: 100px;
+  left: 0;
+  padding: 20px 100px 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "content1 content2 content3"
+                       "content4 content5 content6"
+                       "content7 content8 content9"
+                       "content10 content11 content12";
+}
+
+.content1 {
+  grid-area: content1;
+  background-color: white;
+  margin: 0 30px 30px;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content2 {
+  grid-area: content2;
+  background-color: white;
+  margin: 0 30px 30px;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content3 {
+  grid-area: content3;
+  background-color: white;
+  margin: 0 30px 30px;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content4 {
+  grid-area: content4;
+  background-color: white;
+  margin: 30px 30px 0px;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content5 {
+  grid-area: content5;
+  background-color: white;
+  margin: 30px 30px 0;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content6 {
+  grid-area: content6;
+  background-color: white;
+  margin: 30px 30px 0;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content7 {
+  grid-area: content7;
+  background-color: white;
+  margin: 50px 30px 0;
+  padding: 0 0 150px 0;
+  position: relative;
+  /* z-index: -1; */
+}
+
+.content8 {
+  grid-area: content8;
+  background-color: white;
+  margin: 50px 30px 0;
+  padding: 0 0 150px 0;
+  position: relative;
+}
+
+.content9 {
+  grid-area: content9;
+  background-color: white;
+  margin: 50px 30px 0px;
+  padding: 0 0 150px 0;
+  position: relative;
+}
+
+.content10 {
+  grid-area: content10;
+  background-color: white;
+  margin: 50px 30px 10px;
+  position: relative;
+}
+
+.content11 {
+  grid-area: content11;
+  background-color: white;
+  margin: 50px 30px 10px;
+  position: relative;
+}
+
+.content12 {
+  grid-area: content12;
+  background-color: white;
+  margin: 50px 30px 10px;
+  position: relative;
+}
+
+.image1 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image2 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image3 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image4 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image5 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 70px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image6 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image7 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image8 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image9 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image10 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image11 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.image12 {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  left: 10px;
+  object-fit: contain;
+}
+
+.sentence1 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence2 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 100px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence3 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.sentence4 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence5 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 20px;
+  left: 25px;
+}
+
+.sentence6 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 100px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence7 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  text-align: center;
+  line-height: 100px;
+  font-family: 'Caveat', cursive;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.sentence8 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 90px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence9 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.sentence10 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 90px;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.sentence11 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+}
+
+.sentence12 {
+  height: 100px;
+  width: 270px;
+  /* background-color: cyan; */
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/* .footer {
+  height: 20px;
+  width: 50%;
+  background-color: slategrey;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+} */
