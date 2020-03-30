@@ -43,13 +43,14 @@
 
 .logo {
   /* background-color: white; */
-  width: 800px;
-  padding-left: 60px;
-  text-align: left;
+  width: 50%;
+  height: 185px;
+  padding-right: 200px;
+  /* text-align: left;
   line-height: 100px;
   font-size: 70px;
   font-weight: bold;
-  font-family: 'Caveat', cursive;
+  font-family: 'Caveat', cursive; */
 }
 
 /* .logo_box {
@@ -178,24 +179,34 @@
   position: relative;
 }
 
+/* .resizeimage img {width: 75%;} */
+
 .image1 {
-  height: 400px;
-  width: 300px;
+  max-width: 85%;
+  max-height: 80%;
+  /* width: auto;
+  height: auto; */
+  /* height: 400px;
+  width: 300px; */
   position: absolute;
+  /* margin: 0 auto; */
   top: 15px;
   right: 10px;
-  left: 10px;
-  object-fit: contain;
+  left: 23px;
+  bottom: 120px;
+  /* object-fit: contain; */
 }
 
 .image2 {
-  height: 400px;
-  width: 300px;
+  max-width: 85%;
+  max-height: 85%;
+  /* height: 400px;
+  width: 300px; */
   position: absolute;
-  top: 15px;
-  right: 10px;
-  left: 10px;
-  object-fit: contain;
+  top: 130px;
+  right: 15px;
+  left: 25px;
+  /* object-fit: contain; */
 }
 
 .image3 {
@@ -299,8 +310,10 @@
 }
 
 .sentence1 {
-  height: 100px;
-  width: 270px;
+  max-height: 20%;
+  max-width: 85%;
+  /* height: 100px;
+  width: 270px; */
   /* background-color: cyan; */
   position: absolute;
   bottom: 20px;
